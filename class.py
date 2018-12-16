@@ -18,12 +18,13 @@ c2 = comp()
 
 c1.update()
 print('updated age is ',c1.age)
+#c1.age = 28
+#c2.age = 49
+c1._init_()
+c2._init_()
 
-c1.age = 28
-c2.age = 49
 
-
-if c1.compare(c2)==True:
+if c1.compare(c2)==True:    
     print('SAME')
 else :
     print('DIFFERENT')
