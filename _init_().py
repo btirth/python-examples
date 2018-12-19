@@ -1,6 +1,6 @@
 class Computer:
 
-    def _init_(self):
+    def __init__(self):
         self.name = 'Navin'
         self.age = 28
 
