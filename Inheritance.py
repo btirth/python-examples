@@ -1,3 +1,4 @@
+
 class A:
     def _init_(self):
         print('Init A')
@@ -23,7 +24,8 @@ class B(A):
 
 class C(A,B):
     def _init_(self):
-        super()._init_()    #it will go into init of A not init of B
+        super(
+            )._init_()    #it will go into init of A not init of B
         print('Init C')
 
 
