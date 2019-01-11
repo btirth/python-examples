@@ -1,5 +1,6 @@
 class comp:
-    def _init_(self):
+    def __init__(self):
+        print("in init")
         self.name = 'tirth'
         self.age = 18
 
@@ -15,13 +16,13 @@ class comp:
 
 c1 = comp()
 c2 = comp()
-
+print('age is ',c1.age)
 c1.update()
 print('updated age is ',c1.age)
-#c1.age = 28
-#c2.age = 49
-c1._init_()
-c2._init_()
+c1.age = 28
+c2.age = 49
+#c1._init_()
+#c2._init_()
 
 
 if c1.compare(c2)==True:    
